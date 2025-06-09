@@ -29,9 +29,11 @@ def get_cnae(codigo):
     if resultado:
         return jsonify(resultado)
     return jsonify({"erro": "CNAE não encontrado"}), 404
-
-i @app.route("/")
-def index():
+@app.route("/")
+def i.ndex():
     return jsonify({"message": "API CNAE - use /cnae/<codigo>"})
+    if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=5000)
+
 __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
